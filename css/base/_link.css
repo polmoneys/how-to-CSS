@@ -1,0 +1,23 @@
+a:is(:not([class]), :not([class]):visited, :not([class]):hover) {
+    /* Add offset to underline, see also https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration */
+    text-decoration: underline;
+    text-decoration-thickness: 0.04em;
+    text-underline-offset: 0.03em;
+    text-decoration-skip-ink: auto;
+}
+
+a:is(:visited, :hover) {
+    touch-action: manipulation;
+    color: var(--color);
+}
+
+@media (--OSdark) {
+    @supports (-webkit-hyphens: none) {
+        /* 
+            https://bugs.webkit.org/show_bug.cgi?id=226893    
+        */
+        a[href] {
+            color: var(--color);
+        }
+    }
+}

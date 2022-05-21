@@ -1,0 +1,42 @@
+:where(html) {
+    /* Base 'size' for a happy user interaction */
+    --usable-height: 48px;
+
+    --disabled-opacity: 0.8;
+}
+
+@media (--touch) {
+    :where(html) {
+        /* Base 'size' for a happy user interaction on 'touch' devices */
+        --usable-height: 52px;
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    font-family: inherit;
+    min-height: var(--usable-height);
+
+    &[disabled] {
+        opacity: var(--disabled-opacity);
+    }
+}
+
+input {
+    caret-color: var(--color);
+    min-width: 0;
+}
+
+@media (--portrait) {
+    /* iOS bug as old as my gbc */
+    input {
+        font-size: 16px;
+    }
+}

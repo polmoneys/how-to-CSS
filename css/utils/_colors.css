@@ -1,0 +1,25 @@
+:where(html) {
+    --transparent: transparent;
+    --white: #f1f1f1;
+    --gray-1: #e9ecef;
+    --gray-2: #dee2e6;
+    --gray-3: #495057;
+    --gray-4: #343a40;
+    --gray-5: #212529;
+
+    --accent-1: #45ffbc;
+    --accent-2: #e3ffa8;
+    --accent-3: #ff6b6b;
+}
+
+@media (color-gamut: p3) {
+    /* Do colorful stuff. */
+}
+
+.red-emoji-check {
+    filter: hue-rotate(-120deg);
+}
+
+.complementary {
+    filter: hue-rotate(90deg);
+}

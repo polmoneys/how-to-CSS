@@ -1,0 +1,11 @@
+img {
+    border: 0;
+    border-style: none;
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+
+    &.-cover {
+        object-fit: cover;
+    }
+}

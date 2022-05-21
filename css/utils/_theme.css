@@ -1,0 +1,46 @@
+:root {
+    color-scheme: light;
+    accent-color: var(--accent-1);
+    --bg: var(--gray-1);
+    --color: var(--gray-5);
+    --color-secondary: var(--gray-3);
+    --border-color: var(--gray-2);
+    --shadow: 0 0.2px 0.3px rgba(0, 0, 0, 0.024), 0 0.6px 0.9px rgba(0, 0, 0, 0.035), 0 1.5px 2.1px rgba(0, 0, 0, 0.046), 0 5px 7px rgba(0, 0, 0, 0.07);
+    --border-width: 2px;
+    --border-radius: 0.3em;
+}
+
+@media (--OSdark) {
+    :root {
+        color-scheme: dark;
+        --shadow: none;
+    }
+}
+
+:is(::-webkit-calendar-picker-indicator, ::-webkit-clear-button, ::-webkit-inner-spin-button, ::-webkit-outer-spin-button, ) {
+    color: var(--accent-1);
+}
+
+html,
+body {
+    color: var(--color);
+    background-color: var(--bg);
+}
+
+/*
+    Color aware surface
+*/
+.paper {
+    background-color: var(--bg);
+    &.\! {
+        background-color: var(--accent-1);
+    }
+    &.\!\! {
+        color: var(--color);
+        background-color: var(--accent-2);
+    }
+    &.\!\!\! {
+        color: var(--color);
+        background-color: var(--accent-3);
+    }
+}

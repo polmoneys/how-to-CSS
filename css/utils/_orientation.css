@@ -1,0 +1,30 @@
+@media (--portrait) {
+    /* a col then row */
+    .col-to-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first-portrait {
+        order: -1 !important;
+    }
+
+    .only-landscape {
+        display: none !important;
+    }
+}
+
+@media (--landscape) {
+    .flex-landscape {
+        display: flex;
+    }
+
+    /* a col then row */
+    .col-to-row {
+        flex-direction: row;
+    }
+
+    .only-portrait {
+        display: none !important;
+    }
+}

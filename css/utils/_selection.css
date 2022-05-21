@@ -1,0 +1,19 @@
+.text-select {
+    user-select: all;
+}
+
+.text-disabled {
+    user-select: none;
+}
+
+::-webkit-selection {
+    background-color: var(--color-secondary);
+}
+
+::-moz-selection {
+    background-color: var(--color-secondary);
+}
+
+::selection {
+    background-color: var(--color-secondary);
+}

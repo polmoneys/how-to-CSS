@@ -1,0 +1,13 @@
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: var(--gray-2);
+
+    /*  
+        fyi: POSTCSS require styles applied before 
+        @nest-ed selectors 
+    */
+    @nest .dark-theme & {
+        background-color: var(--gray-1);
+    }
+}

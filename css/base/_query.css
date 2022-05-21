@@ -1,0 +1,19 @@
+@custom-media --portrait (orientation: portrait);
+@custom-media --landscape (orientation: landscape);
+
+@custom-media --OSdark (prefers-color-scheme: dark);
+@custom-media --OSlight (prefers-color-scheme: light);
+
+@custom-media --xs-phone (--xs-only) and (--portrait);
+@custom-media --xs-only (240px <= width <= 360px);
+@custom-media --xs-n-below (width <= 360px);
+@custom-media --xxl-n-above (width >= 1920px);
+
+@custom-media --safariONLY (-webkit-hyphens: none);
+@custom-media --firefoxONLY (-moz-appearance: none);
+@custom-media --chromeONLY (-webkit-tap-highlight-color: black);
+
+/* old IE */
+@custom-media --cutMustard (grid-area: auto);
+
+@custom-media --touch (hover: none) and (pointer: coarse);

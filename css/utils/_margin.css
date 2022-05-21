@@ -1,0 +1,43 @@
+/*
+    In Flex context margin is what you need. 
+*/
+
+.mt-auto {
+    margin-top: auto;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.mr-auto {
+    margin-right: auto;
+}
+
+@media (--landscape) {
+    .mt-landscape-auto {
+        margin-top: auto;
+    }
+
+    .ml-landscape-auto {
+        margin-left: auto;
+    }
+
+    .mr-landscape-auto {
+        margin-right: auto;
+    }
+}
+
+@media (--portrait) {
+    .mt-portrait-auto {
+        margin-top: auto;
+    }
+
+    .ml-portrait-auto {
+        margin-left: auto;
+    }
+
+    .mr-portrait-auto {
+        margin-right: auto;
+    }
+}

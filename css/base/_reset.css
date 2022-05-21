@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    color: currentColor;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -webkit-overflow-scrolling: touch;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+@supports (scrollbar-gutter: stable) {
+    body {
+        overflow-y: auto;
+        scrollbar-gutter: stable;
+    }
+}

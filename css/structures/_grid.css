@@ -1,0 +1,100 @@
+/*
+    Grid clamps a minimal width so that children never go below it
+    while allowing them to grow and fill as max space as posible. 
+*/
+
+.grid {
+    --grid-item-width: 250px;
+    width: 100%;
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--grid-item-width)), 1fr));
+
+    &.\# {
+        --grid-item-width: 460px;
+    }
+    &.\#\# {
+        --grid-item-width: 690px;
+    }
+    &.\#\#\# {
+        --grid-item-width: 860px;
+    }
+
+    &.masonry {
+        grid-template-rows: masonry;
+    }
+}
+
+/*
+    12 colum grid enhanced by place-items 
+*/
+
+.legacy-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    & > * {
+        display: grid;
+        place-items: center;
+
+        &.\# {
+            grid-column: 1 / span 12;
+        }
+
+        &.\#\# {
+            &.-a {
+                grid-column: 1 / span 6;
+            }
+            &.-b {
+                grid-column: 7 / span 6;
+            }
+        }
+
+        &.\#\#\# {
+            &.-a {
+                grid-column: 1 / span 4;
+            }
+            &.-b {
+                grid-column: 5 / span 4;
+            }
+            &.-c {
+                grid-column: 9 / span 4;
+            }
+        }
+
+        &.\#\#\#\# {
+            &.-a {
+                grid-column: 1 / span 3;
+            }
+            &.-b {
+                grid-column: 4 / span 3;
+            }
+            &.-c {
+                grid-column: 7 / span 3;
+            }
+            &.-d {
+                grid-column: 10 / span 3;
+            }
+        }
+        &.\#\#\#\#\# {
+            &.-a {
+                grid-column: 1 / span 2;
+            }
+            &.-b {
+                grid-column: 3 / span 2;
+            }
+            &.-c {
+                grid-column: 5 / span 2;
+            }
+            &.-d {
+                grid-column: 7 / span 2;
+            }
+            &.-e {
+                grid-column: 9 / span 2;
+            }
+            &.-f {
+                grid-column: 11 / span 2;
+            }
+        }
+    }
+}

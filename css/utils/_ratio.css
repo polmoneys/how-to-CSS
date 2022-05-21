@@ -1,0 +1,39 @@
+.circle {
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.ratio {
+    --content-ratio: 1;
+    position: relative;
+    padding-top: calc((1 / (var(--content-ratio))) * 100%);
+    &.\# {
+        --content-ratio: 4/3;
+    }
+    &.\#\# {
+        --content-ratio: 9/16;
+    }
+    &.\#\#\# {
+        --content-ratio: 16/9;
+    }
+    &.\#\#\#\# {
+        --content-ratio: 18/5;
+    }
+}
+
+@supports (aspect-ratio: 1) {
+    .ratio {
+        aspect-ratio: var(--content-ratio);
+        padding-top: initial;
+
+        &.\# {
+            --content-ratio: 4/3;
+        }
+        &.\#\# {
+            --content-ratio: 9/16;
+        }
+        &.\#\#\# {
+            --content-ratio: 16/9;
+        }
+    }
+}

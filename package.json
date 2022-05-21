@@ -1,0 +1,26 @@
+{
+    "name": "css-is-mental",
+    "version": "1.0.0",
+    "description": "CSS Mental model ",
+    "main": "index.js",
+    "scripts": {
+        "css": "postcss ./css/index.css  --o ./out/styles.css",
+        "critical": "postcss ./css/critical.css  --o ./out/critical.css",
+        "watch": "postcss ./css/index.css --no-map --o ./out/styles.css --watch --verbose",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "CSS"
+    ],
+    "author": "pol moneys",
+    "license": "ISC",
+    "devDependencies": {
+        "cssnano": "^5.1.8",
+        "postcss": "^8.4.14",
+        "postcss-cli": "^9.1.0",
+        "postcss-combine-duplicated-selectors": "^10.0.3",
+        "postcss-export-vars": "^0.2.0",
+        "postcss-import": "^14.1.0",
+        "postcss-preset-env": "^7.6.0"
+    }
+}

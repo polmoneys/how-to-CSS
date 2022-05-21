@@ -1,0 +1,23 @@
+/*
+    Stack is an alternative to position absolute, as a bonus 
+    retains max width of children.
+*/
+
+.stack {
+    display: grid;
+    grid-template-areas: 'stack';
+    width: fit-content;
+    place-items: center;
+}
+
+.stack > * {
+    grid-area: stack;
+}
+
+.stack > *:first-child {
+    position: relative;
+}
+
+.stack > *[aria-hidden='true'] {
+    visibility: hidden;
+}
