@@ -17,6 +17,22 @@ Write CSS on any folder structure and import all files to **index.css**. A file 
 
 Picked tokens (check **postcss.config.cjs**) will be exported as **css-tokens.js** in root folder so that you can consume them with **js**. 
 
+### Authoring
+
+<table><tr><td width="400px" valign="top">
+
+### Name
+
+Description
+
+</td><td width="600px"><br>
+
+```ts
+// code block
+```
+
+</td></tr></table>
+
 ### Tooling 💯
 
 [PostCSS +8](https://cssdb.org/) with [PresetEnv](https://github.com/csstools/postcss-plugins/tree/main/plugin-packs/postcss-preset-env) stage 0.  
