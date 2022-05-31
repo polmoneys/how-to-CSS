@@ -16,6 +16,11 @@ button {
     cursor: pointer;
 }
 
+button.-icon {
+    width: max(var(--usable-height), 2em);
+    height: max(var(--usable-height), 2em);
+}
+
 input,
 button,
 textarea,
@@ -39,4 +44,10 @@ input {
     input {
         font-size: 16px;
     }
+}
+
+/* 2022 fix */
+
+input {
+    font-size: max(16px, 1rem);
 }
