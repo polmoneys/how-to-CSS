@@ -33,7 +33,7 @@ body {
     overflow-wrap: break-word;
 }
 
-:is(button, h1, h2, h3)::first-letter {
+:is(h1, h2, h3)::first-letter {
     text-transform: var(--casing);
 }
 
