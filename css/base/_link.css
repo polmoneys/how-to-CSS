@@ -4,6 +4,8 @@ a:is(:not([class]), :not([class]):visited, :not([class]):hover) {
     text-decoration-thickness: 0.04em;
     text-underline-offset: 0.03em;
     text-decoration-skip-ink: auto;
+
+    hyphens: none;
 }
 
 a:is(:visited, :hover) {
