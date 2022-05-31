@@ -38,7 +38,7 @@ module.exports = (cfg) => {
             exportTokens({
                 file: 'css-tokens',
                 type: 'js',
-                // Picking colors, fonts, borders, padding
+                // Pick by custom property name
                 match: ['transparent', 'white', 'gray', 'accent', 'font-size', 'gap'],
             }),
             devMode
