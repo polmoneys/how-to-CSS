@@ -41,6 +41,13 @@
     }
 }
 
+.grid-column {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    height: 100vh;
+}
+
 /*
     12 colum grid enhanced by place-items 
 */
