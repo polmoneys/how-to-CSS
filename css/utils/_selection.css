@@ -17,3 +17,21 @@
 ::selection {
     background-color: var(--color-secondary);
 }
+
+/*
+    Reveal ellipsis content on hover, useful in a Table cell.
+*/
+
+.text-hover > * {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.text-hover:hover > * {
+    background-color: inherit;
+    contain: paint;
+    width: fit-content;
+    min-width: 100%;
+}
