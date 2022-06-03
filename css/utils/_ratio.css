@@ -4,20 +4,22 @@
 }
 
 .ratio {
-    --content-ratio: 1;
+    --ratio-square: 1;
+    --ratio-portrait: 9/16;
+    --ratio-landscape: 16/9;
+    --ratio-ultrawide: 18/5;
+
+    --content-ratio: var(--ratio-square);
     position: relative;
     padding-top: calc((1 / (var(--content-ratio))) * 100%);
     &.\# {
-        --content-ratio: 4/3;
+        --content-ratio: var(--ratio-portrait);
     }
     &.\#\# {
-        --content-ratio: 9/16;
+        --content-ratio: var(--ratio-landscape);
     }
     &.\#\#\# {
-        --content-ratio: 16/9;
-    }
-    &.\#\#\#\# {
-        --content-ratio: 18/5;
+        --content-ratio: var(--ratio-ultrawide);
     }
 }
 
@@ -27,13 +29,13 @@
         padding-top: initial;
 
         &.\# {
-            --content-ratio: 4/3;
+            --content-ratio: var(--ratio-portrait);
         }
         &.\#\# {
-            --content-ratio: 9/16;
+            --content-ratio: var(--ratio-landscape);
         }
         &.\#\#\# {
-            --content-ratio: 16/9;
+            --content-ratio: var(--ratio-ultrawide);
         }
     }
 }
