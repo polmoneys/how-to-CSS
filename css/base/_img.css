@@ -9,3 +9,19 @@ img {
         object-fit: cover;
     }
 }
+
+/*
+
+    The object-view-box property specifies a “view box” over an element, 
+    similar to the <svg viewBox> attribute
+
+*/
+
+img.-art-direction {
+    --img-width: 300px;
+    --img-art-direction: 25% 20% 15% 0%;
+    aspect-ratio: 1;
+    width: var(--img-width);
+    object-view-box: inset(var(--img-art-direction));
+    object-fit: cover;
+}
