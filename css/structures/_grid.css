@@ -4,20 +4,25 @@
 */
 
 .grid {
-    --grid-item-width: 250px;
+    --item-grid-sm: 250px;
+    --item-grid-md: 460px;
+    --item-grid-lg: 690px;
+    --item-grid-xl: 860px;
+
+    --grid-item-width: var(--item-grid-sm);
     width: 100%;
     display: grid;
     align-items: start;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--grid-item-width)), 1fr));
 
     &.\# {
-        --grid-item-width: 460px;
+        --grid-item-width: var(--item-grid-md);
     }
     &.\#\# {
-        --grid-item-width: 690px;
+        --grid-item-width: var(--item-grid-lg);
     }
     &.\#\#\# {
-        --grid-item-width: 860px;
+        --grid-item-width: var(--item-grid-xl);
     }
 
     &.\@ {
