@@ -1,11 +1,13 @@
 :where(html) {
     --transparent: transparent;
     --white: #f1f1f1;
-    --gray-1: #e9ecef;
+    --black: #1c2127;
+
+    --gray-1: #f6f7f9;
     --gray-2: #dee2e6;
-    --gray-3: #495057;
+    --gray-3: #abb3bf;
     --gray-4: #343a40;
-    --gray-5: #212529;
+    --gray-5: #252a31;
 
     --accent-1: #45ffbc;
     --accent-2: #e3ffa8;
@@ -13,9 +15,9 @@
 }
 
 @media (color-gamut: p3) {
-    --accent-1: oklch(89.29% 0.174 163.8);
-    --accent-2: oklch(95.98% 0.114 123.06);
-    --accent-3: oklch(71.16% 0.181 22.84);
+    --accent-1-p3: oklch(89.29% 0.174 163.8);
+    --accent-2-p3: oklch(95.98% 0.114 123.06);
+    --accent-3-p3: oklch(71.16% 0.181 22.84);
 }
 
 @media (forced-colors: active) {
