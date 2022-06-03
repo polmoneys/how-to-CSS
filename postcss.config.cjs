@@ -39,7 +39,7 @@ module.exports = (cfg) => {
                 file: 'css-tokens',
                 type: 'js',
                 // Pick by custom property name
-                match: ['transparent', 'white', 'gray', 'accent', 'font-size', 'gap'],
+                match: ['transparent', 'white', 'black', 'gray', 'accent', 'font-size', 'gap', 'set-solid', 'grid-item-width', 'ratio-', 'item-grid'],
             }),
             devMode
                 ? null

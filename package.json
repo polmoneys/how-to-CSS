@@ -1,11 +1,12 @@
 {
     "name": "css-is-mental",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "description": "CSS Mental model ",
     "main": "index.js",
     "scripts": {
         "css": "postcss ./css/index.css  --o ./out/styles.css",
         "critical": "postcss ./css/critical.css  --o ./out/critical.css",
+        "all": "npm run critical && npm run css",
         "watch": "postcss ./css/index.css --no-map --o ./out/styles.css --watch --verbose",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
