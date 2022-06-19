@@ -12,13 +12,13 @@
     --content-ratio: var(--ratio-square);
     position: relative;
     padding-top: calc((1 / (var(--content-ratio))) * 100%);
-    &.\# {
+    &.-portrait {
         --content-ratio: var(--ratio-portrait);
     }
-    &.\#\# {
+    &.-landscape {
         --content-ratio: var(--ratio-landscape);
     }
-    &.\#\#\# {
+    &.-ultrawide {
         --content-ratio: var(--ratio-ultrawide);
     }
 }
@@ -28,13 +28,13 @@
         aspect-ratio: var(--content-ratio);
         padding-top: initial;
 
-        &.\# {
+        &.-portrait {
             --content-ratio: var(--ratio-portrait);
         }
-        &.\#\# {
+        &.-landscape {
             --content-ratio: var(--ratio-landscape);
         }
-        &.\#\#\# {
+        &.-ultrawide {
             --content-ratio: var(--ratio-ultrawide);
         }
     }

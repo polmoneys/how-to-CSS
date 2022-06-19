@@ -1,0 +1,16 @@
+/*
+    Height of all tabs will be equal to 'tallest' content
+*/
+
+.tabs {
+    display: grid;
+    grid-template-areas: 'overlap';
+
+    &.-center {
+        place-items: center;
+    }
+}
+
+.tabs > * {
+    grid-area: overlap;
+}

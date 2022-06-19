@@ -1,13 +1,10 @@
 :where(html) {
-    --font-size-0: 0.75rem;
-    --font-size-1: 1rem;
-    --font-size-2: 1.1rem;
-    --font-size-3: 1.25rem;
-    --font-size-4: 1.6rem;
-    --font-size-5: 2rem;
-    --font-size-6: 2.5rem;
-    --font-size-fluid-1: clamp(1rem, 4vw, 1.5rem);
-    --font-size-fluid-2: clamp(2rem, 9vw, 3.5rem);
+    --font-size-0: 0.75em;
+    --font-size-1: 1em;
+    --font-size-2: 1.25em;
+    --font-size-3: 1.6em;
+    --font-size-4: 2.5em;
+    --font-size-fluid-1: clamp(2rem, 9vw, 3.5rem);
 
     --casing: uppercase;
     --set-solid: 1;
@@ -43,23 +40,19 @@ p:has(span, b) {
 }
 
 .t {
-    &.\# {
-        font-size: var(--font-size-1);
+    font-size: var(--font-size-1);
+
+    &.-xs {
+        font-size: var(--font-size-0);
     }
-    &.\#\# {
+    &.-md {
         font-size: var(--font-size-2);
     }
-    &.\#\#\# {
+    &.-lg {
         font-size: var(--font-size-3);
     }
-    &.\#\#\#\# {
+    &.-xl {
         font-size: var(--font-size-4);
-    }
-    &.\#\#\#\#\# {
-        font-size: var(--font-size-5);
-    }
-    &.\#\#\#\#\#\# {
-        font-size: var(--font-size-6);
     }
 
     &.-truncate {
@@ -75,10 +68,5 @@ p:has(span, b) {
 }
 
 .t-fluid {
-    &.\# {
-        font-size: var(--font-size-fluid-1);
-    }
-    &.\#\# {
-        font-size: var(--font-size-fluid-2);
-    }
+    font-size: var(--font-size-fluid-1);
 }

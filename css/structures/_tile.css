@@ -6,54 +6,35 @@
     width: 100%;
     display: grid;
     align-items: start;
-
-    &.\@ {
-        gap: var(--gap-1);
-    }
-    &.\@\@ {
-        gap: var(--gap-2);
-    }
-    &.\@\@\@ {
-        gap: var(--gap-3);
-    }
-    &.\@\@\@\@ {
-        gap: var(--gap-4);
-    }
-    &.\@\@\@\@\@ {
-        gap: var(--gap-5);
-    }
-
-    &.\# {
+    grid-template-columns: repeat(1, 1fr);
+    @media (--portrait) {
         grid-template-columns: repeat(1, 1fr);
-        @media (--portrait) {
-            grid-template-columns: repeat(1, 1fr);
-        }
     }
-    &.\#\# {
+    &.-xxl {
         grid-template-columns: repeat(2, 1fr);
         @media (--portrait) {
             grid-template-columns: repeat(1, 1fr);
         }
     }
-    &.\#\#\# {
+    &.-xl {
         grid-template-columns: repeat(3, 1fr);
         @media (--portrait) {
             grid-template-columns: repeat(1, 1fr);
         }
     }
-    &.\#\#\#\# {
+    &.-lg {
         grid-template-columns: repeat(4, 1fr);
         @media (--portrait) {
             grid-template-columns: repeat(2, 1fr);
         }
     }
-    &.\#\#\#\#\# {
+    &.-md {
         grid-template-columns: repeat(5, 1fr);
         @media (--portrait) {
             grid-template-columns: repeat(2, 1fr);
         }
     }
-    &.\#\#\#\#\#\# {
+    &.-sm {
         grid-template-columns: repeat(6, 1fr);
         @media (--portrait) {
             grid-template-columns: repeat(3, 1fr);

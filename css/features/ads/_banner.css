@@ -1,0 +1,10 @@
+/*
+  Hide ad container until ads load and have been injected
+*/
+
+.ad-container {
+    display: none;
+}
+.ad-container:has(.ad) {
+    display: block;
+}

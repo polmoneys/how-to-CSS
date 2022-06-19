@@ -1,3 +1,6 @@
+/*
+    Framework styles should rarely change
+*/
 @import 'base/_reset';
 @import 'base/_query';
 @import 'base/_link';
@@ -9,8 +12,10 @@
 @import 'structures/_shelf';
 @import 'structures/_stack';
 @import 'structures/_sticky';
+@import 'structures/_tabs';
 @import 'structures/_tile';
 
+@import 'utils/_gap';
 @import 'utils/_colors';
 @import 'utils/_fit';
 @import 'utils/_margin';
@@ -21,9 +26,3 @@
 @import 'utils/_theme';
 @import 'utils/_type';
 @import 'utils/_visually_hidden';
-
-/* 
-    + features
-*/
-
-@import 'features/topics/_article';

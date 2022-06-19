@@ -7,22 +7,6 @@
     flex-wrap: nowrap;
     width: 100%;
 
-    &.\@ {
-        gap: var(--gap-1);
-    }
-    &.\@\@ {
-        gap: var(--gap-2);
-    }
-    &.\@\@\@ {
-        gap: var(--gap-3);
-    }
-    &.\@\@\@\@ {
-        gap: var(--gap-4);
-    }
-    &.\@\@\@\@\@ {
-        gap: var(--gap-5);
-    }
-
     &.-column {
         flex-direction: column;
     }
@@ -37,5 +21,16 @@
 
     &.-grow {
         flex-grow: 1;
+    }
+
+    /* Will fall into a new column if enough viewport space is available  */
+    &.-grid {
+        --min-content-width: 20rem;
+        display: flex;
+        flex-wrap: wrap;
+
+        & > * {
+            flex: 1 1 var(--min-content-width);
+        }
     }
 }

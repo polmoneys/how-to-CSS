@@ -2,7 +2,8 @@
 
     Text is clamped but Images are full width.
     row-gap as *+*  => https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/
-
+    
+    article h2:has(+ p) { }
 */
 
 article {

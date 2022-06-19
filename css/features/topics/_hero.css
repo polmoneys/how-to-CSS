@@ -1,0 +1,6 @@
+.hero {
+    /*
+        TODO: why postCSS fails ?
+        border-image: conic-gradient(var(--accent-2) 0 0) fill 0 //0 100vmax;
+     */
+}

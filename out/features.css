@@ -1,0 +1,26 @@
+.ad-container {
+    display: none;
+}
+.ad-container:has(.ad) {
+    display: block;
+}
+.layout-column {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+article {
+    grid-row-gap: 0.8rem;
+    display: grid;
+    grid-template-columns: minmax(var(--gap-5), 1fr) minmax(auto, 57ch) minmax(var(--gap-5), 1fr);
+    row-gap: 0.8rem;
+}
+article > p {
+    grid-column: 2;
+}
+article > img {
+    grid-column: 1/4;
+    justify-self: center;
+    max-width: 100ch;
+    width: 100%;
+}

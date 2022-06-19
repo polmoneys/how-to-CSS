@@ -14,12 +14,6 @@
     --accent-3: #ff6b6b;
 }
 
-@media (color-gamut: p3) {
-    --accent-1-p3: oklch(89.29% 0.174 163.8);
-    --accent-2-p3: oklch(95.98% 0.114 123.06);
-    --accent-3-p3: oklch(71.16% 0.181 22.84);
-}
-
 @media (forced-colors: active) {
     svg {
         /* Automatically adjust the SVG to pick up the text color for High Contrast mode */

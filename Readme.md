@@ -1,16 +1,19 @@
 ## TLDR
 
-Play with it on [codesandbox.io](https://codesandbox.io/s/demo-how-to-css-n0pzeq).
+Cheatsheet (WIP) on [codesandbox.io](https://codesandbox.io/s/how-to-css-2-0-bery4n?file=/index.html).
 
 ## Getting started
 
-Write CSS on any folder structure and import all files to **index.css**. A file **styles.css** will be created in **/out** directory. 
+Write CSS on any folder structure and import all files to **index.css**. A file **framework.css** will be created in **/out** directory. Same idea with **critical.css** and **framework.css**. 
 
 ```bash
 
-   npm run css
+   # run all the scripts
+   npm run magic
    
    # also available
+   npm run framework
+   npm run features
    npm run critical
 
 ```
@@ -37,7 +40,7 @@ Description
 
 ### Tooling 💯
 
-[PostCSS +8](https://cssdb.org/) with [PresetEnv](https://github.com/csstools/postcss-plugins/tree/main/plugin-packs/postcss-preset-env) stage 0.  
+[PostCSS +8](https://cssdb.org/) with [PresetEnv](https://github.com/csstools/postcss-plugins/tree/main/plugin-packs/postcss-preset-env) stage **0**.  
 
 ### Inspiration 💐
 
