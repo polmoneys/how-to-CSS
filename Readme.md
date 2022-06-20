@@ -4,7 +4,7 @@ Cheatsheet (WIP) on [codesandbox.io](https://codesandbox.io/s/how-to-css-2-0-ber
 
 ## Getting started
 
-Write CSS on any folder structure and import all files to **index.css**. A file **framework.css** will be created in **/out** directory. Same idea with **critical.css** and **framework.css**. 
+Write CSS on any folder structure and import all files to **index.css**. A file **framework.css** will be created in **/out** directory. Same idea with **critical.css** and **features.css**. 
 
 ```bash
 
