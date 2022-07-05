@@ -1,0 +1,19 @@
+/*
+    Intrinsic size grid with a "featured" item display on top.
+    if more than one item per row "it" will always stay on the 
+    top right position.
+*/
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1em;
+
+    & > .featured {
+        grid-area: 1 / auto/auto/-1;
+        /*  
+            grid-row: 1;
+            grid-column-end: -1;
+        */
+    }
+}
