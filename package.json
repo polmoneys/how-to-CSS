@@ -1,10 +1,10 @@
 {
     "name": "css-is-mental",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "description": "CSS Mental model",
     "main": "index.js",
     "scripts": {
-        "magic": "npm run critical && npm run framework && npm run features",
+        "magic": "npm run critical && npm run features",
         "comment": "##### css-tokens.js is empty try 'npm run framework' #####",
         "framework": "postcss ./css/index.css  --o ./out/framework.css",
         "features": "postcss ./css/features.css  --o ./out/features.css",
